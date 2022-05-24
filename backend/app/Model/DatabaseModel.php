@@ -4,14 +4,15 @@ namespace App\Model;
 
 
 use PDO;
+use PDOException;
 
 class DatabaseModel
 {
-    private $servername;
-    private $dbname;
-    private $user;
-    private $password;
-    private $charset;
+//    private $servername;
+//    private $dbname;
+//    private $user;
+//    private $password;
+//    private $charset;
 
     static public function connect(): \PDO
     {

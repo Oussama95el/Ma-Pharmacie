@@ -1,11 +1,13 @@
 <script >
 import HeaderNav from "./components/HeaderNav.vue";
 import Footer from "./components/Footer.vue";
+import ProductCard from "./components/ProductCard.vue";
 export default {
   component: "app",
   components: {
     HeaderNav,
     Footer,
+    ProductCard,
   }
 }
 </script>
@@ -83,6 +85,7 @@ export default {
 }
 
 #app {
+  scroll-behavior: smooth;
   background-color: white !important;
   padding: 0px;
   min-height: 100vh;

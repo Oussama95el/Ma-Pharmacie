@@ -41,12 +41,29 @@
         </div>
       </div>
     </section>
+    <div class="flex flex-col mb-3">
+      <h2 class="ml-10 text-2xl font-semibold ">Promotion</h2>
+      <span class="bg-gray-700 ml-10 mr-10  w-11/12 h-[1px]"></span>
+    </div>
+    <section class="flex flex-wrap grid-cols-1 sm:grid-cols-2 gap-8 md:grid-cols-4 md:gap-8 p-5 justify-center">
+      <ProductCard v-for="item in limitCard" :key="item"/>
+      {{item}}
+    </section>
   </div>
 </template>
 
 <script>
+import ProductCard from "../components/ProductCard.vue";
 export default {
-  name: "Product"
+  name: "Product",
+  components:{
+    ProductCard,
+  },
+  data(){
+    return{
+      limitCard: 4,
+    }
+  }
 }
 </script>
 

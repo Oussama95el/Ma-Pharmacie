@@ -8,7 +8,7 @@ use App\router\Request;
 
 class ClientController
 {
-    use PersonLogin;
+    use utils;
     public function register()
     {
         $data = Request::getBody();

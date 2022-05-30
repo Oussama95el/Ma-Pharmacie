@@ -9,12 +9,11 @@ use PDOException;
 class ClientModel
 {
 
-    static public function addClient($data)
+    static public function addClient($data): bool
     {
         $connect = DatabaseModel::connect();
         $db = $connect->prepare('INSERT INTO client ( fname, email, password) 
                                                     values (:fname, :email, :password)');
-
         return $db->execute($data);
     }
 

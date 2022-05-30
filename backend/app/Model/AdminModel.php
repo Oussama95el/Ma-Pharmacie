@@ -24,7 +24,7 @@ class AdminModel
     public static function addLivreur($data)
     {
         $connect = DatabaseModel::connect();
-        $db = $connect->prepare('INSERT INTO livreur ( fname, email, password) 
+        $db = $connect->prepare('INSERT INTO livereur ( fname, email, password) 
                                                     values (:fname, :email, :password)');
 
         return $db->execute($data);

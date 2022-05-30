@@ -1,13 +1,16 @@
 <script >
-import HeaderNav from "./components/HeaderNav.vue";
-import Footer from "./components/Footer.vue";
-import ProductCard from "./components/ProductCard.vue";
+import HeaderNav from "./components/navbars/HeaderNav.vue";
+import Footer from "./components/footers/Footer.vue";
+import ProductCard from "./components/cards/ProductCard.vue";
+import ProductForm from "./components/forms/ProductForm.vue";
 export default {
   component: "app",
   components: {
     HeaderNav,
     Footer,
     ProductCard,
+    ProductForm,
+
   }
 }
 </script>

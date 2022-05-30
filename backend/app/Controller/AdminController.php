@@ -3,17 +3,16 @@
 namespace App\Controller;
 
 use App\Model\AdminModel;
-use App\Model\ClientModel;
 use App\router\Request;
 
 class AdminController
 {
-    use PersonLogin;
+    use utils;
 
     public function auth()
     {
         $admin = Request::getBody();
-        $this->checkCredentiels(AdminModel::checkAdmin($admin),$admin);
+        $this->checkCredentiels(AdminModel::checkAdmin($admin['email']),$admin);
     }
 
     public function addLivreur()

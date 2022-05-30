@@ -83,7 +83,7 @@
     </div>
 </template>
 <script>
-import ProductCard from "../components/ProductCard.vue";
+import ProductCard from "../components/cards/ProductCard.vue";
 export default {
   components:{
     ProductCard,

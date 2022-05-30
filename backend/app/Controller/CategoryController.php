@@ -4,6 +4,8 @@ namespace App\Controller;
 
 use App\Model\CategoryModel;
 use App\router\Request;
+use App\router\Route;
+use mysql_xdevapi\Result;
 
 class CategoryController
 {
@@ -11,7 +13,6 @@ class CategoryController
     {
         $data = Request::getBody();
         $result = CategoryModel::addCat($data);
-        var_dump($result);
         if ($result) {
             echo json_encode($result);
         }
@@ -26,5 +27,14 @@ class CategoryController
         }else{
             echo "error";
         }
+    }
+
+    public static function geAllCategories()
+    {
+//        var_dump(CategoryModel::getAllCat());
+         $data = CategoryModel::getAllCat();
+         if ($data !== []){
+         return Route::json($data);
+         }else echo 'No data';
     }
 }

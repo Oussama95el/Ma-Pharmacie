@@ -139,8 +139,6 @@ class Route
     public static function handleRequest()
     {
         self::cors();
-
-
         $handler = self::getHandler();
         if (!$handler) {
             echo json_encode(["message" => "Resource not found"]);

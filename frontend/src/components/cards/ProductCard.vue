@@ -1,12 +1,20 @@
 <template>
     <div>
       <div class="max-w-[250px] bg-white shadow-md dark:bg-gray-800 dark:border-gray-700">
+<!--           data-aos="fade-up"-->
+<!--           data-aos-offset="200"-->
+<!--           data-aos-delay="50"-->
+<!--           data-aos-duration="500"-->
+<!--           data-aos-easing="ease-in-out"-->
+<!--           data-aos-mirror="true"-->
+<!--           data-aos-once="false"-->
+<!--           data-aos-anchor-placement="top-center">-->
         <a href="#" class="flex justify-center">
           <img class="p-6 rounded-t-lg" src="/src/assets/images/santis-lab-aromasanti.png" alt="product image">
         </a>
         <div class="px-5 pb-5">
           <a href="#" class="text-center">
-            <h5 class="text-base font-semibold tracking-tight text-gray-900 dark:text-white">Santis lab</h5>
+            <h5 class="text-base font-semibold tracking-tight text-gray-900">Santis lab</h5>
           </a>
           <p class="text-xs text-[706F6F] text-center">
             Aromasantis ARG 30 Capsules
@@ -50,8 +58,14 @@
           <div class="flex justify-between items-center">
             <span class="text-base font-bold text-gray-900 dark:text-white">$599</span>
             <button
-               class="text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
-              to cart</button>
+               class="text-white
+                      bg-primary
+                      focus:ring-4 focus:outline-none focus:ring-blue-300
+                      font-medium rounded-lg
+                      text-sm px-5 py-2.5 text-center
+                      hover:bg-opacity-90">
+              Add to cart
+            </button>
           </div>
         </div>
       </div>

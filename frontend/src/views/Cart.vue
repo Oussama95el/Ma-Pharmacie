@@ -106,8 +106,14 @@
                 </div>
                 <div class="w-full p-2">
                   <input type="submit"
-                         class="text-white h-[4rem] bg-primary focus:ring-4 hover:cursor-pointer focus:outline-none focus:ring-blue-300 font-medium  text-sm w-full  px-5 py-2.5 text-center"
-                         value="Order Now">
+                         value="Order Now"
+                         class="text-white
+                         h-[4rem] bg-primary
+                         focus:ring-4 hover:cursor-pointer
+                         focus:outline-none focus:ring-blue-300
+                         font-medium  text-sm text-center
+                         w-full  px-5 py-2.5
+                         hover:bg-opacity-90">
                 </div>
               </div>
           </div>

@@ -4,7 +4,7 @@
             <div class="flex flex-col mx-2 py-2 md:px-4">
                 <div class="bg-red w-100 flex justify-between">
                     <div class="flex items-center text-center md:w-[30px]-[30px]">
-                        <img src="../assets/images/Logo.png" alt="" class="" />
+                        <img src="../../assets/images/Logo.png" alt="" class="" />
                         <span class="hidden sm:block text-primary ml-2 text-p">
                             MaPharmacie
                         </span>
@@ -14,8 +14,8 @@
                         <input type="text" id="email-address-icon"
                             class="block text-p p-2 pl-2 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500"
                             placeholder="search ..." />
-                        <img src="../assets/images/SearchVector.png" class="absolute top-2 right-2 w-[20px] -[20px]"
-                            alt="search icon" />
+                        <img src="../../assets/images/SearchVector.png" class="absolute top-2 right-2 w-[20px] -[20px]"
+                             alt="search icon" />
                     </div>
                 </div>
 
@@ -58,7 +58,7 @@
                                       Contact</router-link>
                                 </li>
                                 <li>
-                                    <router-link to="Para"
+                                    <router-link to="/"
                                         class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                                       Para-pharmacie</router-link>
                                 </li>
@@ -131,13 +131,13 @@
                     <div class="flex">
                         <button class="w-full md:block md:w-auto mx-4 text-left">
                             <router-link to="/login">
-                                <img class="w-6 ml-1 md:w-8" src="../assets/images/carbon_user-avatar.svg" alt="cart image" />
+                                <img class="w-6 ml-1 md:w-8" src="../../assets/images/carbon_user-avatar.svg" alt="cart image" />
                                 <span>Login</span>
                             </router-link>
                         </button>
                         <button class="w-full md:block md:w-auto mt-1 mx-4 text-left">
                             <router-link to="/cart">
-                                <img class="w-6 md:w-8" src="../assets/images/Vector.svg" alt="cart image" />
+                                <img class="w-6 md:w-8" src="../../assets/images/Vector.svg" alt="cart image" />
                                 <span>Cart</span>
                             </router-link>
                         </button>
